@@ -2,7 +2,7 @@
 
  ML analysis of goodreads data
 
-##Introduction:
+## Introduction:
 
 The data used in this project was scraped from Goodreads and posted on Kaggle. Goodreads is a website hosted by Amazon that collates book reviews submitted by users. The user reviews are used to fuel an algorithm that recommends books to users based on their reading history.
 
@@ -11,7 +11,7 @@ A particularly important feature of the dataset is genre. Many readers gravitate
 All of this raises an interesting question: can we break down an artistic medium, such as fiction, into numerical values? Algorithms increasingly control which books we are exposed to, but how effectively we can predict a book’s popularity from its numerical descriptors?
 
 
-##Questions:
+## Questions:
 
 1.	Can you predict the popularity of a book from numerical data?
 
@@ -20,7 +20,7 @@ All of this raises an interesting question: can we break down an artistic medium
 3.	How many genres do we really need to represent this data?
 
 
-##Data Description:
+## Data Description:
 
 Source: [Kaggle](https://www.kaggle.com/datasets/austinreese/goodreads-books/data)
 
@@ -33,7 +33,7 @@ In the genre feature, each book is associated with multiple genre-count pairs, w
 The “description” feature contains user-submitted, textual descriptions of the books.
 
 
-##Methods:
+## Methods:
 
 First, we perform dimensionality reduction on the 871 genre variables. This is necessary because many of the genres are clearly redundant: “young adult”, “young adult-coming of age”, and “young adult-high school” are undoubtedly colinear. By reducing the dimensions of this space, we can answer Question 3.
 
